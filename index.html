@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Project 1</title>
+	<title>Project 1</title>
+	<meta charset="UTF-8">
+	<style>
+		header {background-color:lightgrey}
+	</style>
 </head>
 
 <body>
-Content of the document......
+
+	<header>	
+		<h1>LearnMixer</h1>
+		<p>My Collections > Math > Math Mammoth > Editing</p>
+		<form action="search_page.php">
+		Search
+		<input type="text" name="search">
+		<input type="submit">
+		</form>
+	</header>
+	
+	<div class="form1_general_info">
+		<h2>Math Mammoth</h2>
+		<form action="fields1_page.php">
+			<label>Description: </label>
+			<textarea rows="5" cols="50"> </textarea>
+			<br>
+			<label>Topic: </label>
+			<input type="text" name="Topic">
+			<br>
+			<label>Subject:</label>
+			<select name = "subject">
+				<option selected value="Choose subject">Choose subject</option>
+				<option value="Biology">Biology</option>
+				<option value="History">History</option>
+				<option value="Math">Math</option>
+				<option value="Computer Science">Computer Science</option>
+			</select>
+			<br>
+			<label>License:</label>
+			<select name = "License">
+				<option selected value="License">License</option>
+				<option value="All rights reserved">All rights reserved</option>
+				<option value="Atribution alone">Atribution alone</option>
+			</select>
+			<br>
+			<label>Level of engagement</label>
+			<select name = "engagement">
+				<option selected value="engagement">Engagement</option>
+				<option value="Consumption">Consumption</option>
+				<option value="Reaction">Reaction</option>
+			</select>
+			<br>
+			<label>Age group:</label>
+			<div id="slider"></div>
+		</form>
+		
+		<hr>
+	
+	</div>
+
+
 </body>
 
 </html>
